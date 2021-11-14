@@ -16,11 +16,8 @@
 }
 
 .hero__title {
-  color: var(--accent-color);
-  font-size: 44px;
-  font-weight: 900;
   text-transform: uppercase;
   text-align: center;
-  line-height: 1.36;
   letter-spacing: 0.06em;
+  @include font_size_color_line_weight(44px, var(--accent-color), 1.36, 900);
 }

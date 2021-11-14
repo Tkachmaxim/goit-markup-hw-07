@@ -4,6 +4,12 @@
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
+  @include font_size_color_line_weight(
+    36px,
+    var(--font-heading-color),
+    1.17,
+    700
+  );
 }
 
 .customers-list {

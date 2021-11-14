@@ -28,8 +28,12 @@
   position: absolute;
   bottom: 0;
   padding: 27px 0 27px;
-  font-size: var(--font-size-header-footer-features);
-  color: var(--accent-color);
-  line-height: 1.17;
   text-transform: uppercase;
+
+  @include font_size_color_line_weight(
+    var(--font-size-header-footer-features),
+    var(--accent-color),
+    1.17,
+    700
+  );
 }

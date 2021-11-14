@@ -9,16 +9,22 @@
 }
 
 .features__title {
+  @include font_size_color_line_weight(
+    var(--font-size-header-footer-features),
+    var(--font-heading-color),
+    1.14,
+    700
+  );
   margin-bottom: 10px;
-  font-size: var(--font-size-header-footer-features);
-  line-height: 1.14;
   text-transform: uppercase;
 }
 
 .features__describe {
-  font-size: var(--font-size-header-footer-features);
-  color: #757575;
-  line-height: 1.74;
+  @include font_size_color_line_weight(
+    var(--font-size-header-footer-features),
+    #757575,
+    1.74
+  );
 }
 
 .feautures__icon {
