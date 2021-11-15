@@ -41,6 +41,11 @@
   font-style: normal;
 }
 
+.footer__form {
+  display: flex;
+  justify-content: center;
+}
+
 .footer-conten__subscribe-section {
   display: flex;
   flex-direction: column;
@@ -61,6 +66,10 @@
   background-color: var(--background-footer-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+  color: var(--accent-color);
+  &::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
 .footer-content__submit-button {
